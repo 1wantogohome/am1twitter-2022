@@ -55,19 +55,18 @@ const TwitFactory = ({userObj}) => {
     const fileInput = useRef();
 
     return (
-
-        <form onSubmit={onSubmit}>
-                <input type="text" value={imtwit} onChange={onChange} placeholder="What's going on?" maxLength={120} />
-                <input type="file" accept="image/*" onChange={onFileChange} ref={fileInput} />
-                { attachment &&
-                    <div>
-                        <img src={attachment} width="50px" height="50px" />
-                        <button onClick={onClearAttachment}>Clear</button>
-                    </div>
-                }
-                <input type="submit" value="imtwit"/>
-            </form>
-
+        <form className="doingtwit" onSubmit={onSubmit}>
+            <input className="placehold" type="text" value={imtwit} onChange={onChange} placeholder="무슨 일이 일어나고 있나요?" maxLength={120} />
+            <input className="fileuploader" id="files" type="file" accept="image/*" onChange={onFileChange} ref={fileInput} />
+            <label for="files" className="fill">파일추가</label>
+            { attachment &&
+                <div className="flexing">
+                    <img src={attachment} width="200px" />
+                    <button className="fill" onClick={onClearAttachment}>파일삭제</button>
+                </div>
+            }
+            <input className="fill" type="submit" value="작성하기"/>
+        </form>
     )
 }
 

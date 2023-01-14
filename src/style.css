@@ -1,0 +1,239 @@
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: #333;}
+img {border: 0; border-radius: 18px; cursor: pointer;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    background-color: #abd9e9;
+    font-size: 14px;
+}
+
+input {
+    border: 0;
+}
+
+.App {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* auth start */
+.auth {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.login .placehold {
+    width: 220px;
+    height: 24px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+    margin: 5px 0;
+    outline: 0;
+}
+
+.placehold {
+    width: 220px;
+    height: 24px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+    margin: 5px 0;
+    outline: 0;
+}
+
+.stroke {
+    width: 200px;
+    height: 24px;
+    line-height: 24px;
+    padding: 7px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.2);
+}
+
+.fill {
+    width: 218px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 7px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.2);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+/* profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+nav>ul>li>a {
+    line-height: 24px;
+    color: #fff;
+}
+
+.changeNickname {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.changeNickname>.placehold {
+    text-align: center;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.profile>button{
+    height: 40px;
+    width: 218px;
+    position: fixed;
+    bottom: 100px;
+}
+
+/* home */
+.doingtwit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 350px;
+    height: max-content;
+    padding: 30px 20px;
+    transition-duration: 0.5s;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.2);
+}
+
+.doingtwit>.placehold {
+    height: 40px;
+    text-align: center;
+}
+
+input[type=file] {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 7px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.content {
+    width: 350px;
+    height: max-content;
+    padding: 20px;
+    margin: 10px 0;
+    transition-duration: 0.5s;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.2);
+}
+
+.content:hover {
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.3);
+}
+
+h4 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contentBtns {
+    display: flex;
+}
+
+.s_fill {
+    width: 80px;
+    height: 30px;
+    padding: 7px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.2);
+    margin: 0 2px;
+}
+
+.s_fill:hover {
+    background-color: #abd9e9;
+    color: #333;
+    font-weight: 600;
+}
+
+.flexing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 10px 0;
+}
+
+label {
+    position: relative;
+    top: 7px;
+}

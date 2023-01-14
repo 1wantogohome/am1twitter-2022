@@ -17,12 +17,12 @@ const Auth = () => {
     };
 
     return (
-        <div>
+        <div className="auth">
             <AuthForm />
             <div>
-                <div>
-                    <button onClick={onSocialClick} name="google">Continue with Google</button>
-                    <button onClick={onSocialClick} name="github">Continue with Github</button>
+                <div className="social">
+                    <button className="fill" onClick={onSocialClick} name="google">Continue with Google</button>
+                    <button className="fill" onClick={onSocialClick} name="github">Continue with Github</button>
                 </div>
             </div>
         </div>

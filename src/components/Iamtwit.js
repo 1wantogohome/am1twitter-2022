@@ -34,24 +34,24 @@ const Iamtwit = ({imtwitObj, isOwner}) => {
         <div>
             {
                 editing ? (
-                    <>
-                    <form onSubmit={onSubmit}>
-                        <input type="text" onChange={onChange} placeholder="Edit your twit" value={newTwit} required />
-                        <button onClick={toggleEditing}>Cancel</button>
-                        <input type="submit" value="Update Twit" />
-                    </form>
-                    </>
+                    <div className="content">
+                        <form onSubmit={onSubmit}>
+                            <input type="text" onChange={onChange} placeholder="Edit your twit" value={newTwit} required />
+                            <button className="s_fill" onClick={toggleEditing}>취소하기</button>
+                            <input className="s_fill" type="submit" value="수정완료" />
+                        </form>
+                    </div>
                 ) : (
-                    <>
+                    <div className="content">
+                        {imtwitObj.attachmentUrl && (<img src={imtwitObj.attachmentUrl} width="350px" />)}
                         <h4>{imtwitObj.text}</h4>
-                        {imtwitObj.attachmentUrl && (<img src={imtwitObj.attachmentUrl} width="80px" height="80px" />)}
                         {isOwner && (
-                        <>
-                            <button onClick={onDeleteClick}>Delete twit</button>
-                            <button onClick={toggleEditing}>Edit twit</button>
-                        </>
+                        <div className="contentBtns">
+                            <button className="s_fill" onClick={onDeleteClick}>삭제하기</button>
+                            <button className="s_fill" onClick={toggleEditing}>수정하기</button>
+                        </div>
                         )}
-                    </>
+                    </div>
                 )
             }
         </div>
