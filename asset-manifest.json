@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/am1twitter-2022/static/css/main.60ae74bb.css",
+    "main.js": "/am1twitter-2022/static/js/main.34568d2f.js",
+    "static/js/787.f33c5fc1.chunk.js": "/am1twitter-2022/static/js/787.f33c5fc1.chunk.js",
+    "index.html": "/am1twitter-2022/index.html",
+    "main.60ae74bb.css.map": "/am1twitter-2022/static/css/main.60ae74bb.css.map",
+    "main.34568d2f.js.map": "/am1twitter-2022/static/js/main.34568d2f.js.map",
+    "787.f33c5fc1.chunk.js.map": "/am1twitter-2022/static/js/787.f33c5fc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60ae74bb.css",
+    "static/js/main.34568d2f.js"
+  ]
+}
